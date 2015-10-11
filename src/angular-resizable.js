@@ -26,7 +26,7 @@ angular.module('angularResizable', [])
                 resizable: '='
             },
             link: function(scope, element, attr) {
-                if (!resizable) {
+                if (!scope.resizable) {
                     return;
                 }
                 var flexBasis = 'flexBasis' in document.documentElement.style ? 'flexBasis' :
